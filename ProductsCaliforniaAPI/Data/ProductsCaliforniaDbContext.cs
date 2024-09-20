@@ -9,5 +9,6 @@ namespace ProductsCaliforniaAPI.Data
         {
         }
         public DbSet<ProductCalifornia> ProductsCalifornia { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }

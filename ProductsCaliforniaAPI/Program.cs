@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ProductsCaliforniaDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("SalesBusiness_ProductsCalifornia")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProductsCalifornia")));
 
 var app = builder.Build();
 
