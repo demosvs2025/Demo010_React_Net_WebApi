@@ -23,7 +23,6 @@ namespace ProductsCaliforniaAPI.Controllers
             return Ok(await context.ProductsCalifornia.ToListAsync());
         }
 
-
         [HttpGet("{id:int}")]
         public async Task<ActionResult<ProductCalifornia>> GetProductCaliforniaById(int id)
         {
@@ -36,7 +35,6 @@ namespace ProductsCaliforniaAPI.Controllers
 
             return Ok(productCalifornia);
         }
-
 
         [HttpPost]
         public async Task<ActionResult> PostProductCalifornia(ProductCaliforniaDto productCaliforniaDto)
@@ -71,7 +69,6 @@ namespace ProductsCaliforniaAPI.Controllers
 
             return Ok(productCalifornia);
         }
-
 
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> DeleteProductCalifornia(int id)
